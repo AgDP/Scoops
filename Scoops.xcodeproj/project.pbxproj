@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBEA84FC1AF37BA300A9ADAD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA84FB1AF37BA300A9ADAD /* main.m */; };
+		FBEA84FF1AF37BA300A9ADAD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA84FE1AF37BA300A9ADAD /* AppDelegate.m */; };
+		FBEA85011AF37BA300A9ADAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEA85001AF37BA300A9ADAD /* Images.xcassets */; };
+		FBEA85041AF37BA300A9ADAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEA85021AF37BA300A9ADAD /* LaunchScreen.xib */; };
+		FBEA85101AF37BA300A9ADAD /* ScoopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA850F1AF37BA300A9ADAD /* ScoopsTests.m */; };
+		FBEA851D1AF38B3B00A9ADAD /* ADPScoopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA851B1AF38B3B00A9ADAD /* ADPScoopViewController.m */; };
+		FBEA851E1AF38B3B00A9ADAD /* ADPScoopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEA851C1AF38B3B00A9ADAD /* ADPScoopViewController.xib */; };
+		FBEA85221AF38BFD00A9ADAD /* portada.png in Resources */ = {isa = PBXBuildFile; fileRef = FBEA85211AF38BFD00A9ADAD /* portada.png */; };
+		FBEA85281AF3963300A9ADAD /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBEA85271AF3963300A9ADAD /* WindowsAzureMobileServices.framework */; };
+		FBEA852C1AF3CCAA00A9ADAD /* ADPCreateNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA852A1AF3CCAA00A9ADAD /* ADPCreateNewViewController.m */; };
+		FBEA852D1AF3CCAA00A9ADAD /* ADPCreateNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEA852B1AF3CCAA00A9ADAD /* ADPCreateNewViewController.xib */; };
+		FBEA85311AF3D04A00A9ADAD /* New.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA85301AF3D04A00A9ADAD /* New.m */; };
+		FBEA85341AF3D78000A9ADAD /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA85331AF3D78000A9ADAD /* User.m */; };
+		FBEA85371AF4057B00A9ADAD /* ADPNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA85361AF4057B00A9ADAD /* ADPNewsTableViewController.m */; };
+		FBEA853E1AF4420200A9ADAD /* ADPNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA853C1AF4420200A9ADAD /* ADPNewsViewController.m */; };
+		FBEA853F1AF4420200A9ADAD /* ADPNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEA853D1AF4420200A9ADAD /* ADPNewsViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBEA850A1AF37BA300A9ADAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBEA84EE1AF37BA300A9ADAD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBEA84F51AF37BA300A9ADAD;
+			remoteInfo = Scoops;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBEA84F61AF37BA300A9ADAD /* Scoops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scoops.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBEA84FA1AF37BA300A9ADAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBEA84FB1AF37BA300A9ADAD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBEA84FD1AF37BA300A9ADAD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBEA84FE1AF37BA300A9ADAD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBEA85001AF37BA300A9ADAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBEA85031AF37BA300A9ADAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FBEA85091AF37BA300A9ADAD /* ScoopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBEA850E1AF37BA300A9ADAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBEA850F1AF37BA300A9ADAD /* ScoopsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoopsTests.m; sourceTree = "<group>"; };
+		FBEA85191AF3840100A9ADAD /* constantes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constantes.h; sourceTree = "<group>"; };
+		FBEA851A1AF38B3B00A9ADAD /* ADPScoopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPScoopViewController.h; sourceTree = "<group>"; };
+		FBEA851B1AF38B3B00A9ADAD /* ADPScoopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPScoopViewController.m; sourceTree = "<group>"; };
+		FBEA851C1AF38B3B00A9ADAD /* ADPScoopViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADPScoopViewController.xib; sourceTree = "<group>"; };
+		FBEA85211AF38BFD00A9ADAD /* portada.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portada.png; sourceTree = "<group>"; };
+		FBEA85271AF3963300A9ADAD /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		FBEA85291AF3CCAA00A9ADAD /* ADPCreateNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPCreateNewViewController.h; sourceTree = "<group>"; };
+		FBEA852A1AF3CCAA00A9ADAD /* ADPCreateNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPCreateNewViewController.m; sourceTree = "<group>"; };
+		FBEA852B1AF3CCAA00A9ADAD /* ADPCreateNewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADPCreateNewViewController.xib; sourceTree = "<group>"; };
+		FBEA852F1AF3D04A00A9ADAD /* New.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = New.h; sourceTree = "<group>"; };
+		FBEA85301AF3D04A00A9ADAD /* New.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = New.m; sourceTree = "<group>"; };
+		FBEA85321AF3D78000A9ADAD /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		FBEA85331AF3D78000A9ADAD /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		FBEA85351AF4057B00A9ADAD /* ADPNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPNewsTableViewController.h; sourceTree = "<group>"; };
+		FBEA85361AF4057B00A9ADAD /* ADPNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPNewsTableViewController.m; sourceTree = "<group>"; };
+		FBEA853B1AF4420200A9ADAD /* ADPNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPNewsViewController.h; sourceTree = "<group>"; };
+		FBEA853C1AF4420200A9ADAD /* ADPNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPNewsViewController.m; sourceTree = "<group>"; };
+		FBEA853D1AF4420200A9ADAD /* ADPNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADPNewsViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBEA84F31AF37BA300A9ADAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEA85281AF3963300A9ADAD /* WindowsAzureMobileServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBEA85061AF37BA300A9ADAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBEA84ED1AF37BA300A9ADAD = {
+			isa = PBXGroup;
+			children = (
+				FBEA85271AF3963300A9ADAD /* WindowsAzureMobileServices.framework */,
+				FBEA84F81AF37BA300A9ADAD /* Scoops */,
+				FBEA850C1AF37BA300A9ADAD /* ScoopsTests */,
+				FBEA84F71AF37BA300A9ADAD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBEA84F71AF37BA300A9ADAD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA84F61AF37BA300A9ADAD /* Scoops.app */,
+				FBEA85091AF37BA300A9ADAD /* ScoopsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBEA84F81AF37BA300A9ADAD /* Scoops */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA852E1AF3D02A00A9ADAD /* Model */,
+				FBEA85201AF38BC600A9ADAD /* Resources */,
+				FBEA84FD1AF37BA300A9ADAD /* AppDelegate.h */,
+				FBEA84FE1AF37BA300A9ADAD /* AppDelegate.m */,
+				FBEA85001AF37BA300A9ADAD /* Images.xcassets */,
+				FBEA85021AF37BA300A9ADAD /* LaunchScreen.xib */,
+				FBEA84F91AF37BA300A9ADAD /* Supporting Files */,
+				FBEA85191AF3840100A9ADAD /* constantes.h */,
+				FBEA851F1AF38B4000A9ADAD /* Controllers */,
+			);
+			path = Scoops;
+			sourceTree = "<group>";
+		};
+		FBEA84F91AF37BA300A9ADAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA84FA1AF37BA300A9ADAD /* Info.plist */,
+				FBEA84FB1AF37BA300A9ADAD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBEA850C1AF37BA300A9ADAD /* ScoopsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA850F1AF37BA300A9ADAD /* ScoopsTests.m */,
+				FBEA850D1AF37BA300A9ADAD /* Supporting Files */,
+			);
+			path = ScoopsTests;
+			sourceTree = "<group>";
+		};
+		FBEA850D1AF37BA300A9ADAD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA850E1AF37BA300A9ADAD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBEA851F1AF38B4000A9ADAD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA851A1AF38B3B00A9ADAD /* ADPScoopViewController.h */,
+				FBEA851B1AF38B3B00A9ADAD /* ADPScoopViewController.m */,
+				FBEA851C1AF38B3B00A9ADAD /* ADPScoopViewController.xib */,
+				FBEA85291AF3CCAA00A9ADAD /* ADPCreateNewViewController.h */,
+				FBEA852A1AF3CCAA00A9ADAD /* ADPCreateNewViewController.m */,
+				FBEA852B1AF3CCAA00A9ADAD /* ADPCreateNewViewController.xib */,
+				FBEA85351AF4057B00A9ADAD /* ADPNewsTableViewController.h */,
+				FBEA85361AF4057B00A9ADAD /* ADPNewsTableViewController.m */,
+				FBEA853B1AF4420200A9ADAD /* ADPNewsViewController.h */,
+				FBEA853C1AF4420200A9ADAD /* ADPNewsViewController.m */,
+				FBEA853D1AF4420200A9ADAD /* ADPNewsViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FBEA85201AF38BC600A9ADAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA85211AF38BFD00A9ADAD /* portada.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		FBEA852E1AF3D02A00A9ADAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FBEA852F1AF3D04A00A9ADAD /* New.h */,
+				FBEA85301AF3D04A00A9ADAD /* New.m */,
+				FBEA85321AF3D78000A9ADAD /* User.h */,
+				FBEA85331AF3D78000A9ADAD /* User.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBEA84F51AF37BA300A9ADAD /* Scoops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBEA85131AF37BA300A9ADAD /* Build configuration list for PBXNativeTarget "Scoops" */;
+			buildPhases = (
+				FBEA84F21AF37BA300A9ADAD /* Sources */,
+				FBEA84F31AF37BA300A9ADAD /* Frameworks */,
+				FBEA84F41AF37BA300A9ADAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Scoops;
+			productName = Scoops;
+			productReference = FBEA84F61AF37BA300A9ADAD /* Scoops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBEA85081AF37BA300A9ADAD /* ScoopsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBEA85161AF37BA300A9ADAD /* Build configuration list for PBXNativeTarget "ScoopsTests" */;
+			buildPhases = (
+				FBEA85051AF37BA300A9ADAD /* Sources */,
+				FBEA85061AF37BA300A9ADAD /* Frameworks */,
+				FBEA85071AF37BA300A9ADAD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBEA850B1AF37BA300A9ADAD /* PBXTargetDependency */,
+			);
+			name = ScoopsTests;
+			productName = ScoopsTests;
+			productReference = FBEA85091AF37BA300A9ADAD /* ScoopsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBEA84EE1AF37BA300A9ADAD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Agustin;
+				TargetAttributes = {
+					FBEA84F51AF37BA300A9ADAD = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					FBEA85081AF37BA300A9ADAD = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = FBEA84F51AF37BA300A9ADAD;
+					};
+				};
+			};
+			buildConfigurationList = FBEA84F11AF37BA300A9ADAD /* Build configuration list for PBXProject "Scoops" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBEA84ED1AF37BA300A9ADAD;
+			productRefGroup = FBEA84F71AF37BA300A9ADAD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBEA84F51AF37BA300A9ADAD /* Scoops */,
+				FBEA85081AF37BA300A9ADAD /* ScoopsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBEA84F41AF37BA300A9ADAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEA85041AF37BA300A9ADAD /* LaunchScreen.xib in Resources */,
+				FBEA85221AF38BFD00A9ADAD /* portada.png in Resources */,
+				FBEA852D1AF3CCAA00A9ADAD /* ADPCreateNewViewController.xib in Resources */,
+				FBEA851E1AF38B3B00A9ADAD /* ADPScoopViewController.xib in Resources */,
+				FBEA85011AF37BA300A9ADAD /* Images.xcassets in Resources */,
+				FBEA853F1AF4420200A9ADAD /* ADPNewsViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBEA85071AF37BA300A9ADAD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBEA84F21AF37BA300A9ADAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEA84FF1AF37BA300A9ADAD /* AppDelegate.m in Sources */,
+				FBEA852C1AF3CCAA00A9ADAD /* ADPCreateNewViewController.m in Sources */,
+				FBEA85341AF3D78000A9ADAD /* User.m in Sources */,
+				FBEA853E1AF4420200A9ADAD /* ADPNewsViewController.m in Sources */,
+				FBEA84FC1AF37BA300A9ADAD /* main.m in Sources */,
+				FBEA85371AF4057B00A9ADAD /* ADPNewsTableViewController.m in Sources */,
+				FBEA851D1AF38B3B00A9ADAD /* ADPScoopViewController.m in Sources */,
+				FBEA85311AF3D04A00A9ADAD /* New.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBEA85051AF37BA300A9ADAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBEA85101AF37BA300A9ADAD /* ScoopsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBEA850B1AF37BA300A9ADAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBEA84F51AF37BA300A9ADAD /* Scoops */;
+			targetProxy = FBEA850A1AF37BA300A9ADAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBEA85021AF37BA300A9ADAD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBEA85031AF37BA300A9ADAD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBEA85111AF37BA300A9ADAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FBEA85121AF37BA300A9ADAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBEA85141AF37BA300A9ADAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Scoops.xcodeproj",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Scoops/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBEA85151AF37BA300A9ADAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Scoops.xcodeproj",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Scoops/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBEA85171AF37BA300A9ADAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScoopsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scoops.app/Scoops";
+			};
+			name = Debug;
+		};
+		FBEA85181AF37BA300A9ADAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ScoopsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Scoops.app/Scoops";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBEA84F11AF37BA300A9ADAD /* Build configuration list for PBXProject "Scoops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBEA85111AF37BA300A9ADAD /* Debug */,
+				FBEA85121AF37BA300A9ADAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBEA85131AF37BA300A9ADAD /* Build configuration list for PBXNativeTarget "Scoops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBEA85141AF37BA300A9ADAD /* Debug */,
+				FBEA85151AF37BA300A9ADAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBEA85161AF37BA300A9ADAD /* Build configuration list for PBXNativeTarget "ScoopsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBEA85171AF37BA300A9ADAD /* Debug */,
+				FBEA85181AF37BA300A9ADAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBEA84EE1AF37BA300A9ADAD /* Project object */;
+}
