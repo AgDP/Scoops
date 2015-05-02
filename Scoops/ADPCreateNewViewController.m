@@ -7,6 +7,7 @@
 //
 
 #import "ADPCreateNewViewController.h"
+#import "ADPPhotoViewController.h"
 #import "New.h"
 #import "User.h"
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
@@ -25,37 +26,58 @@
     if (self = [super init]) {
         _userLog = user;
         _client = client;
+        _news = [New new];
     }
     
     return self;
 }
 
 
-- (void)viewDidLoad {
+-(void) viewWillAppear:(BOOL)animated{
     [super viewDidLoad];
     
+    
+    self.photoView.image = [UIImage imageWithData:self.news.image];
+    
     [self setupKeyboardNotifications];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
 
 - (IBAction)displayPublicar:(id)sender {
-
     
-    New *new = [[New alloc] initWithTitle:self.titletext.text andPhoto:nil aText:self.boxNews.text anAuthor:self.userLog.name anIdUser:self.userLog.idUser aValoracion: 0 aState: false aClient: self.client];
+    self.news.title = self.titletext.text;
+    self.news.image = self.news.image,
+    self.news.text = self.boxNews.text;
+    self.news.author = self.userLog.name;
+    self.news.idUser = self.userLog.idUser;
+    self.news.valoracion = 0;
+    self.news.estado = false;
+    self.news.client = self.client;
     
-    [new addNewToAzure];
+    [self.news addNewToAzure];
+    
     
 }
 
 - (IBAction)dysplayCamera:(id)sender {
     
+    self.news.title = self.titletext.text;
+    self.news.image = self.news.image,
+    self.news.text = self.boxNews.text;
+    self.news.author = self.userLog.name;
+    self.news.idUser = self.userLog.idUser;
+    self.news.valoracion = 0;
+    self.news.estado = false;
+    self.news.client = self.client;
     
+    //Creamos un book
+    ADPPhotoViewController *nVC = [[ADPPhotoViewController alloc] initWithNews:self.news];
+    
+    //Hago un push
+    [self.navigationController pushViewController:nVC animated:YES];
+    
+    self.photoView.image = [UIImage imageWithData:self.news.image];
 }
 
 

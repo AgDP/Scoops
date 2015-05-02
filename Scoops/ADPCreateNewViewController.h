@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @class User;
+@class New;
 #import <WindowsAzureMobileServices/WindowsAzureMobileServices.h>
 
 @interface ADPCreateNewViewController : UIViewController
@@ -16,8 +17,10 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *titletext;
 @property (weak, nonatomic) IBOutlet UITextView *boxNews;
+@property (weak, nonatomic) IBOutlet UIImageView *photoView;
 @property (weak, nonatomic) MSClient * client;
 @property (weak, nonatomic) User *userLog;
+@property (strong, nonatomic) New *news;
 
 @property (nonatomic) CGRect oldRect;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolBarView;

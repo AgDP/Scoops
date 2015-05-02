@@ -8,11 +8,12 @@
             <connections>
                 <outlet property="boxNews" destination="q1h-y5-lOW" id="fLq-ox-Tb8"/>
                 <outlet property="titletext" destination="ht5-D6-zPC" id="ZC8-ss-ZvF"/>
+                <outlet property="valoracionGlobal" destination="R8s-Um-7T4" id="4LG-3A-S01"/>
                 <outlet property="view" destination="A4B-9E-c5W" id="dmv-jY-LIY"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="A4B-9E-c5W">
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="A4B-9E-c5W" customClass="UIControl">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -51,30 +52,64 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valoración" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf2-nk-Sfh">
-                    <rect key="frame" x="8" y="527" width="80" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valoración Global" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yf2-nk-Sfh">
+                    <rect key="frame" x="8" y="527" width="135" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R8s-Um-7T4">
+                    <rect key="frame" x="167" y="523" width="41" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valorar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXe-NM-PKf">
+                    <rect key="frame" x="8" y="556" width="54" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kjL-8C-J89">
+                    <rect key="frame" x="167" y="556" width="41" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22l-0k-DNI">
+                    <rect key="frame" x="229" y="556" width="69" height="30"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <state key="normal" title="Valora">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="q1h-y5-lOW" firstAttribute="leading" secondItem="A4B-9E-c5W" secondAttribute="leading" constant="8" id="2LU-cP-xUC"/>
+                <constraint firstItem="kjL-8C-J89" firstAttribute="top" secondItem="R8s-Um-7T4" secondAttribute="bottom" constant="3" id="6M3-lA-TRv"/>
                 <constraint firstItem="ht5-D6-zPC" firstAttribute="top" secondItem="FJP-Ak-gzq" secondAttribute="bottom" constant="8" symbolic="YES" id="8iK-7N-LjL"/>
                 <constraint firstItem="yf2-nk-Sfh" firstAttribute="top" secondItem="q1h-y5-lOW" secondAttribute="bottom" constant="26" id="9o0-Je-T8H"/>
                 <constraint firstItem="q1h-y5-lOW" firstAttribute="leading" secondItem="yf2-nk-Sfh" secondAttribute="leading" id="ByR-2p-9MU"/>
                 <constraint firstItem="q1h-y5-lOW" firstAttribute="top" secondItem="ht5-D6-zPC" secondAttribute="bottom" constant="68" id="CmG-Dq-72P"/>
                 <constraint firstItem="q1h-y5-lOW" firstAttribute="leading" secondItem="DdY-Vd-PUH" secondAttribute="leading" id="CqL-bZ-koq"/>
                 <constraint firstItem="B9k-L8-ipE" firstAttribute="top" secondItem="FJP-Ak-gzq" secondAttribute="top" id="D7O-OT-7h0"/>
+                <constraint firstItem="kjL-8C-J89" firstAttribute="leading" secondItem="fXe-NM-PKf" secondAttribute="trailing" constant="105" id="GE6-cS-STo"/>
                 <constraint firstItem="FJP-Ak-gzq" firstAttribute="leading" secondItem="B9k-L8-ipE" secondAttribute="trailing" constant="8" id="LIv-fM-Hs7"/>
+                <constraint firstItem="22l-0k-DNI" firstAttribute="leading" secondItem="kjL-8C-J89" secondAttribute="trailing" constant="21" id="LU8-sp-9Vd"/>
+                <constraint firstItem="R8s-Um-7T4" firstAttribute="leading" secondItem="yf2-nk-Sfh" secondAttribute="trailing" constant="24" id="UV9-R5-LzL"/>
+                <constraint firstItem="22l-0k-DNI" firstAttribute="top" secondItem="q1h-y5-lOW" secondAttribute="bottom" constant="55" id="W2c-7U-iq8"/>
+                <constraint firstItem="R8s-Um-7T4" firstAttribute="top" secondItem="q1h-y5-lOW" secondAttribute="bottom" constant="22" id="Wu2-aR-05n"/>
+                <constraint firstItem="fXe-NM-PKf" firstAttribute="top" secondItem="yf2-nk-Sfh" secondAttribute="bottom" constant="8" id="bre-b2-tUk"/>
                 <constraint firstItem="ht5-D6-zPC" firstAttribute="leading" secondItem="B9k-L8-ipE" secondAttribute="trailing" constant="8" id="caC-6a-xfs"/>
                 <constraint firstAttribute="trailing" secondItem="ht5-D6-zPC" secondAttribute="trailing" constant="8" id="hX2-ta-CBT"/>
                 <constraint firstAttribute="trailing" secondItem="q1h-y5-lOW" secondAttribute="trailing" constant="13" id="nps-P6-bmZ"/>
+                <constraint firstItem="fXe-NM-PKf" firstAttribute="leading" secondItem="A4B-9E-c5W" secondAttribute="leading" constant="8" id="rhc-yp-IsY"/>
                 <constraint firstItem="q1h-y5-lOW" firstAttribute="top" secondItem="DdY-Vd-PUH" secondAttribute="bottom" constant="8" symbolic="YES" id="rz7-zd-Jh9"/>
                 <constraint firstItem="B9k-L8-ipE" firstAttribute="leading" secondItem="A4B-9E-c5W" secondAttribute="leading" constant="8" id="uKi-Xh-s7Q"/>
                 <constraint firstItem="ht5-D6-zPC" firstAttribute="top" secondItem="A4B-9E-c5W" secondAttribute="top" constant="105" id="v2h-Zm-7Pk"/>
             </constraints>
+            <connections>
+                <action selector="hideKeyboard:" destination="-1" eventType="touchUpInside" id="rRt-Pg-qCP"/>
+            </connections>
         </view>
     </objects>
 </document>

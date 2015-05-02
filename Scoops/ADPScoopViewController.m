@@ -35,6 +35,7 @@
     
     [self loginFB];
     
+    self.picProfile.image = [UIImage imageNamed:@"profile.jpg"];
 }
 
 - (void)didReceiveMemoryWarning {

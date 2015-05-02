@@ -108,9 +108,11 @@
         if (error) {
             NSLog(@"Error %@", error);
         } else {
-            NSLog(@"%@",result);
+            
             
             NSDictionary *items = [result valueForKey:@"items"];
+            
+            NSLog(@"%@",items);
             
             for (id item in items) {
                 

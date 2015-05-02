@@ -30,6 +30,7 @@
 
     self.titletext.text = self.news.title;
     self.boxNews.text = self.news.text;
+    self.valoracionGlobal.text = [NSString stringWithFormat:@"%ld", (long)self.news.valoracion];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +38,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (IBAction)hideKeyboard:(id)sender{
+    
+    [self.view endEditing:YES];
+}
 
 @end

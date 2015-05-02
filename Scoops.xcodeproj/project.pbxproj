@@ -23,6 +23,9 @@
 		FBEA85371AF4057B00A9ADAD /* ADPNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA85361AF4057B00A9ADAD /* ADPNewsTableViewController.m */; };
 		FBEA853E1AF4420200A9ADAD /* ADPNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA853C1AF4420200A9ADAD /* ADPNewsViewController.m */; };
 		FBEA853F1AF4420200A9ADAD /* ADPNewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEA853D1AF4420200A9ADAD /* ADPNewsViewController.xib */; };
+		FBEA85411AF4C88D00A9ADAD /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBEA85401AF4C88D00A9ADAD /* profile.jpg */; };
+		FBEA854A1AF5336300A9ADAD /* ADPPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBEA85481AF5336300A9ADAD /* ADPPhotoViewController.m */; };
+		FBEA854B1AF5336300A9ADAD /* ADPPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBEA85491AF5336300A9ADAD /* ADPPhotoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,10 @@
 		FBEA853B1AF4420200A9ADAD /* ADPNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPNewsViewController.h; sourceTree = "<group>"; };
 		FBEA853C1AF4420200A9ADAD /* ADPNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPNewsViewController.m; sourceTree = "<group>"; };
 		FBEA853D1AF4420200A9ADAD /* ADPNewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADPNewsViewController.xib; sourceTree = "<group>"; };
+		FBEA85401AF4C88D00A9ADAD /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		FBEA85471AF5336300A9ADAD /* ADPPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADPPhotoViewController.h; sourceTree = "<group>"; };
+		FBEA85481AF5336300A9ADAD /* ADPPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADPPhotoViewController.m; sourceTree = "<group>"; };
+		FBEA85491AF5336300A9ADAD /* ADPPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ADPPhotoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +167,9 @@
 				FBEA853B1AF4420200A9ADAD /* ADPNewsViewController.h */,
 				FBEA853C1AF4420200A9ADAD /* ADPNewsViewController.m */,
 				FBEA853D1AF4420200A9ADAD /* ADPNewsViewController.xib */,
+				FBEA85471AF5336300A9ADAD /* ADPPhotoViewController.h */,
+				FBEA85481AF5336300A9ADAD /* ADPPhotoViewController.m */,
+				FBEA85491AF5336300A9ADAD /* ADPPhotoViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -167,6 +177,7 @@
 		FBEA85201AF38BC600A9ADAD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FBEA85401AF4C88D00A9ADAD /* profile.jpg */,
 				FBEA85211AF38BFD00A9ADAD /* portada.png */,
 			);
 			name = Resources;
@@ -264,11 +275,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEA85041AF37BA300A9ADAD /* LaunchScreen.xib in Resources */,
+				FBEA854B1AF5336300A9ADAD /* ADPPhotoViewController.xib in Resources */,
 				FBEA85221AF38BFD00A9ADAD /* portada.png in Resources */,
 				FBEA852D1AF3CCAA00A9ADAD /* ADPCreateNewViewController.xib in Resources */,
 				FBEA851E1AF38B3B00A9ADAD /* ADPScoopViewController.xib in Resources */,
 				FBEA85011AF37BA300A9ADAD /* Images.xcassets in Resources */,
 				FBEA853F1AF4420200A9ADAD /* ADPNewsViewController.xib in Resources */,
+				FBEA85411AF4C88D00A9ADAD /* profile.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +300,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBEA84FF1AF37BA300A9ADAD /* AppDelegate.m in Sources */,
+				FBEA854A1AF5336300A9ADAD /* ADPPhotoViewController.m in Sources */,
 				FBEA852C1AF3CCAA00A9ADAD /* ADPCreateNewViewController.m in Sources */,
 				FBEA85341AF3D78000A9ADAD /* User.m in Sources */,
 				FBEA853E1AF4420200A9ADAD /* ADPNewsViewController.m in Sources */,

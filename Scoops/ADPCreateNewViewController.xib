@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ADPCreateNewViewController">
             <connections>
                 <outlet property="boxNews" destination="vsg-TG-uIa" id="lWK-xd-nEu"/>
+                <outlet property="photoView" destination="uGs-xE-J4D" id="bG1-zX-A2h"/>
                 <outlet property="titletext" destination="FKm-tn-hjk" id="jE1-8H-kWT"/>
                 <outlet property="toolBarView" destination="wu4-E3-GL7" id="7IN-Ys-gsY"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

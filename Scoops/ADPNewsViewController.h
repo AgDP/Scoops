@@ -15,6 +15,9 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *titletext;
 @property (weak, nonatomic) IBOutlet UITextView *boxNews;
+@property (weak, nonatomic) IBOutlet UITextField *valoracionGlobal;
 @property (weak, nonatomic) New *news;
+
+- (IBAction)hideKeyboard:(id)sender;
 
 @end
