@@ -7,6 +7,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ADPNewsViewController">
             <connections>
                 <outlet property="boxNews" destination="q1h-y5-lOW" id="fLq-ox-Tb8"/>
+                <outlet property="miValoracion" destination="kjL-8C-J89" id="en3-cv-GxV"/>
                 <outlet property="titletext" destination="ht5-D6-zPC" id="ZC8-ss-ZvF"/>
                 <outlet property="valoracionGlobal" destination="R8s-Um-7T4" id="4LG-3A-S01"/>
                 <outlet property="view" destination="A4B-9E-c5W" id="dmv-jY-LIY"/>
@@ -70,16 +71,19 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kjL-8C-J89">
-                    <rect key="frame" x="167" y="556" width="41" height="30"/>
+                    <rect key="frame" x="167" y="556" width="63" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22l-0k-DNI">
-                    <rect key="frame" x="229" y="556" width="69" height="30"/>
+                    <rect key="frame" x="257" y="556" width="69" height="30"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <state key="normal" title="Valora">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="valorarNews:" destination="-1" eventType="touchUpInside" id="2Xx-dR-EdN"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -31,6 +31,26 @@
     
 }
 
+- (id)initWithIdNews: (NSString*) idNews aTitle:(NSString*)title andPhoto:(NSData *)img aText:(NSString*)text anAuthor:(NSString *)author anIdUser: (NSString *) idUser aValoracion: (NSInteger) valoracion aState: (BOOL) estado aClient: (MSClient *) client{
+    
+    if (self = [super init]) {
+        _idNews = idNews;
+        _title = title;
+        _text = text;
+        _author = author;
+        //_coors = coors;
+        _image = img;
+        _dateCreated = [NSDate date];
+        _idUser = idUser;
+        _valoracion = valoracion;
+        _estado = estado;
+        _client = client;
+    }
+    
+    return self;
+    
+}
+
 - (void)addNewToAzure{
     MSTable *news = [self.client tableWithName:@"news"];
     
@@ -41,10 +61,19 @@
           if (error) {
               NSLog(@"Error %@", error);
           } else {
-              NSLog(@"OK");
+              NSLog(@"OK --- %@", item);
+              
+              self.idNews = [item valueForKey:@"id"];
+              UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"News"
+                                                              message:@"Se ha creado una nueva News"
+                                                             delegate:nil
+                                                    cancelButtonTitle:@"OK"
+                                                    otherButtonTitles:nil];
+              [alert show];
           }
           
       }];
+    
 }
 
 

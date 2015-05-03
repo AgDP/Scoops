@@ -89,7 +89,7 @@
     New *news = [self.news objectAtIndex:indexPath.row];
     
     //Creamos un book
-    ADPNewsViewController *nVC = [[ADPNewsViewController alloc] initWithNews:news];
+    ADPNewsViewController *nVC = [[ADPNewsViewController alloc] initWithNews:news aClient:self.client];
     
     //Hago un push
     [self.navigationController pushViewController:nVC animated:YES];
@@ -112,11 +112,9 @@
             
             NSDictionary *items = [result valueForKey:@"items"];
             
-            NSLog(@"%@",items);
-            
             for (id item in items) {
                 
-                New *new = [[New alloc] initWithTitle:[item valueForKey:@"titulo"] andPhoto:nil aText:[item valueForKey:@"noticia"] anAuthor:[item valueForKey:@"autor"] anIdUser:[item valueForKey:@"userid"] aValoracion:[[item valueForKey:@"valoracion"] boolValue] aState:[item valueForKey:@"estado"] aClient:self.client];
+                New *new = [[New alloc] initWithIdNews:[item valueForKey:@"id"] aTitle:[item valueForKey:@"titulo"] andPhoto:nil aText:[item valueForKey:@"noticia"] anAuthor:[item valueForKey:@"autor"] anIdUser:[item valueForKey:@"userid"] aValoracion:[[item valueForKey:@"valoracion"] boolValue] aState:[item valueForKey:@"estado"] aClient:self.client];
                 
                 [arrayNew addObject:new];
             }
